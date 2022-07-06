@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 const Hero = () => {
     return (
         <div  className="bg-white h-screen flex flex-col justify-center items-center">
-            <motion.h1 animate={{fontSize:50,color:'#ff2994',x:100,y:-100}} className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-black mb-14">
+            <motion.h1 initial={{opacity:0}} animate={{fontSize:50,color:'#ff2994',x:100,y:-100,opacity:1}} className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-black mb-14">
                 EGGCELLENT
             </motion.h1>
             <Link to='/' className='py-6 px-10 bg-yellow-500 rounded-full text-3xl hover:bg-yellow-300 transition duration-300 ease-in-out flex items-center animate-bounce'>Order Now<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
